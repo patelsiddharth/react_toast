@@ -1,0 +1,45 @@
+.toastContainer {
+    box-shadow: 0 1px 10px 0 rgba(0,0,0,.35),0 2px 15px 0 rgba(0,0,0,.3);
+    width: 200px;
+    border-radius: 4px;
+    padding: 10px;
+    position: absolute;
+    right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 1;
+    background: white;
+    color: #757575;
+}
+
+.toastContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 1;
+}
+
+.closeToast {
+    cursor: pointer;
+    user-select: none;
+}
+
+.toastProgress {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border: none;
+    height: 4px;
+    width: 100%;
+}
+
+.toastProgress::-webkit-progress-bar {
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.toastProgress::-webkit-progress-value {
+    background-color: #ffc0fd;
+    border-radius: 4px;
+}
